@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" 
+                integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" 
+                crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+                integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+                crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+                crossorigin="anonymous"></script>
+  </head>
+</head>
+<body class="body">
+    <div class="container-lg">
+        
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
+            <!-- lg = large breakpoint - navbar-light = make text dark-->
+             <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="img/contrailimg.png" alt="RP Logo" width=50px>
+                </a>
+
+                <!-- Hamburger Menu Button-->
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                <!-- Collapsible navbar menu with custom hover underline CSS animation-->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <!-- Links to hamburger menu button-->
+                     <ul class="navbar-nav ms-auto"> <!-- ms-auto provides auto margin spacing-->
+                        <li class="nav-item">
+                            <a href="authors.html" class="nav-link hover-underline-animation">Authors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="procedure.html" class="nav-link hover-underline-animation">Procedure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="results.html" class="nav-link hover-underline-animation">Results</a>
+                        </li>
+                     </ul>
+                </div>
+             </div>
+        </nav>
+
+        <!-- Showcase-->
+         <section class="showcase text-light p-2 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 p-0 d-flex align-items-center">
+                        <!-- img-fluid = won't expand image larger than the container-->
+                        <img class="img-fluid" src="img/header.png" alt="Shark River">
+                    </div>
+                    <div class="col-sm-6 p-0 d-flex align-items-center">
+                        <div class="container">
+                            <h1 class="display-4">Contrails Research Practicum Project for HTHS</h1> <!--display-4 makes the h1 stand out-->
+                            <h2>Harry Fan, Mentor: Craig Queenan</h2> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <section class="overview text-dark p-2 text-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 p-3">
+                        <img class="img-fluid" src="img/segmentationimg.png" alt="Image Segmentation">
+                    </div>
+                    <div class="col-sm-8 p-3">
+                        <h1 class="ovPadLeft">Background</h1>
+                        <p class="lead overview-font ovPadLeft" id="">Image Segmentation is the act of using a Machine Leaning (ML) model to, given an image of some objects, recognize and find the pixels that those objects are located in within the image. One application is in global warming; planes that fly in the sky release contrails, which can expand to thousands of miles and trap heat in the Earth's atmosphere. By recognizing these contrails with the Segformer BO model, researchers and airlines can better understand better how contrails occur to avoid them.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 p-3">
+                        <h1 class="ovPadLeft">Rationale</h1>
+                        <p class="lead overview-font ovPadLeft" id="">Contrails contribute to around 35% of airplanes' CO<sub>2</sub>, or around 1% of the world's CO<sub>2</sub> impact. Powerful (non-ML) models have been developed to predict the appearance of contrails and global warming, but these require empirical data to support the model. More generally, contrails are lines that move at a constant speed, and hence learning how to recognize these objects could also help with models that are lines and/or move at a constant pace.</p>
+                    </div>
+                    <div class="col-sm-4 p-3">
+                        <img class="img-fluid" src="img/rationaleimg.png" alt="Contrail CO2 influence graph">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 p-3">
+                        <img class="img-fluid" src="img/rpimg.png" alt="Water Temperature Graph">
+                    </div>
+                    <div class="col-sm-8 p-3">
+                        <h1 class="ovPadLeft">Research Practicum</h1>
+                        <p class="lead overview-font ovPadLeft" id="">Research Practicum is a program from HTHS for sophomores that teaches them how to write a research paper. (It's pretty cool.) Students are given lab space and ample resources to aid in their knowledge (I would like them to add GPUs to the list of resources, though), and all this culminates in a research paper worth 40% of the semester grade. Pretty epic :]</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <section class="vw-75" style="background-color: #dbe3e7;">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-9 col-xl-7">
+                  <div class="card" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+          
+                      <div class="text-center mb-4 pb-2">
+                        <img src="img/contrailimg.png" width=100px>
+                      </div>
+          
+                      <figure class="text-center mb-0">
+                        <blockquote class="blockquote">
+                          <p class="pb-3">
+                            <i class="fas fa-quote-left fa-xs text-primary"></i>
+                            <span class="lead font-italic">... [The] goal is to design, build and test a SegFormer B0 [Image Segmentation] model able to segment contrails in satellite imagery for Google Research to help confirm global warming predictions regarding such contrails by making it easier to segment contrails than humans segmenting such contrails.</span>
+                            <i class="fas fa-quote-right fa-xs text-primary"></i>
+                          </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0">
+                            Research Goal, Harry Fan's research paper
+                        </figcaption>
+                      </figure>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Footer (requires BS icons CSS)-->
+            <footer class="p-5 footer text-light text-center position-relative">
+                <div class="container">
+                    <p class="lead">Copyright &copy; SE 2024 Research Practicum Website, Harry Fan</p>
+                        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                            <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+                        </a>
+                    </div>
+            </footer>
+          </section>
+    </div>
+</body>
+</html>
