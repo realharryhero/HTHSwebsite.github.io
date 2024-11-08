@@ -1,7 +1,7 @@
 /* Fetching CSV data of research. */
 
 async function getData() {
-    const response = await fetch("../data/contraildata.csv");
+    const response = await fetch("./data/contraildata.csv");
     const data = await response.text();
     const xEpochs = [];
     const yTrainingLoss = [];
