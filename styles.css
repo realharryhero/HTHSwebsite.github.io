@@ -52,12 +52,14 @@
     padding: 1px;
 }
 
-.chartJS-Sample{
+.ChartJS-Sample {
     background-color: #dbe3e7;
     padding: 1px;
 }
 
-
+#myChart {
+    height: 50vw !important;
+}
 
 .showcase{
     background-color: #8fa3ab; /*#0096c7*/
